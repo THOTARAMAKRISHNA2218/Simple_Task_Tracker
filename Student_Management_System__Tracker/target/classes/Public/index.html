@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎓 Student Task Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎓 Student Task Tracker</h1>
+
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Enter task title" required />
+      <select id="status">
+        <option value="PENDING">PENDING</option>
+        <option value="DONE">DONE</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="search-box">
+      <input type="text" id="searchTitle" placeholder="Search by task title" />
+      <button id="searchButton">Search</button>
+      <button id="resetButton">Reset</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
